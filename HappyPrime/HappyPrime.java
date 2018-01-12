@@ -1,8 +1,12 @@
+//Author: Mayank Jain
+//Purpose: To find if a number is Happy prime or not
+
 import java.util.ArrayList;
 
 public class HappyPrime {
 	public static ArrayList<Integer> list = new ArrayList<Integer>();
-
+	
+	//Checks if a number is prime or not, returns true if it is
 	public static boolean checkPrime(int num){
 		if(num==1)
 			return false;
@@ -14,6 +18,8 @@ public class HappyPrime {
 		return true;
 	}
 	
+	//Adds all the individual numbers in an integer
+	//Example 123 = 1 + 2 + 3 = 6
 	public static int splitSqAdd(Integer num){
 		int value=0;
 		int temp=0;
@@ -25,6 +31,8 @@ public class HappyPrime {
 		
 		return value;
 	}
+	//checks if input value 'num' is present in input ArayList 'list'
+	//returns false if it is present
 	public static boolean checkRepeat(ArrayList<Integer> list, int num){
 		for(int i=0;i<list.size();i++){
 				if(list.get(i)==num)
@@ -33,6 +41,8 @@ public class HappyPrime {
 		}
 		return true;
 	}
+	
+	//Checks if a number is happy prime or not
 	public static boolean finall(int num){
 		list.clear();
 		if(checkPrime(num)){
