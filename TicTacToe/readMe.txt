@@ -1,9 +1,8 @@
-Assignment 2- part1
 Name: Mayank Jain
-Submission Date: 09/30/2015
+Date: 09/30/2015
 —————————————————————
 
-Purpose: Play Tic Tac Toe 2 player
+Purpose: Naive approach to play a two player Tic Tac Toe
 Input: an integer between 1 - 9
 Output: Updated TicTacToe Board
 
